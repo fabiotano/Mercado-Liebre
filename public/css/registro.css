@@ -1,0 +1,88 @@
+main form {
+    padding: 6%;
+}
+
+form section, .radio , .checkbox  {
+    width: 80%;
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+form legend {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+form input {
+    height: 2.5rem;
+    max-height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: none;
+}
+
+.mis-datos input {
+    margin-bottom: 10px;
+}
+
+.checkbox div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.radio div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.opciones-radio {
+    justify-content: space-between;}
+
+.checkbox label {
+    margin-left: 10px;
+}
+
+.radio label {
+    margin-left: 10px;
+}
+
+.comprador {
+    flex-grow: 0.30;
+}
+
+.vendedor {
+    flex-grow: 0.70;
+}
+
+.boton-reset button {
+    width: 80%;
+    max-width: 450px;
+    height: 2.5rem;
+    max-height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+
+}
+
+.boton-send button {
+    width: 80%;
+    max-width: 450px;
+    height: 2.5rem;
+    max-height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1259c3;
+    color: white;
+}

@@ -1,0 +1,329 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+
+
+/* CSS para HEADERS */
+
+header {
+    background-color: #EAC926;
+}
+
+.fa-search {
+    background-color: #ffff;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+header p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+header li a {
+    text-decoration: none;
+}
+
+.burger-menu {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 23px;
+}
+
+.fa-bars {
+    color: white;
+    background-color: #1259c3;
+    font-size: 2em;
+    border-radius: 20%;
+    padding: 2.5%;
+}
+
+.opciones ul {
+    padding-bottom: 10px;
+}
+
+.header-total {
+    padding: 15px;
+}
+
+
+.logo-MELI {
+    width: 50%;
+    flex-grow: 1;
+    padding-right: 7px;
+}
+
+.busqueda {
+    width: 50%;
+    width: fit-content;
+}
+
+.buscador {
+    padding-left: 13px;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.buscador input {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 7px;
+    box-sizing: border-box;
+}
+
+.buscador i {
+    margin-left: -27px;
+    border: none;
+    height: 20px;
+    width: 16px;
+}
+
+header section {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+
+}
+
+.pciones-right {
+    width: 300px;
+    padding-right: 10px;
+}
+
+header nav {
+    padding: 10px;
+} 
+
+/* CSS para MAIN */
+
+main {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.titulares h1 {
+    font-size: 20px;
+    margin: 13px 0px 13px;
+}
+
+article img {
+    width: 75%;
+}
+
+article {
+    background-color: white;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.detalle-articulo {
+    border-top: solid 1px #ebebeb;
+    padding: 11px;
+    padding-left: 23px;
+    text-align: left;
+}
+
+article h2 {
+    font-size: 18px;
+}
+
+article h3 {
+    font-size: 16px;
+    color: green
+}
+
+article h4 {
+    color: grey;
+    padding-top: 15px;
+}
+
+.fa-truck-fast {
+    color: green
+}
+
+.detalle-articulo i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    flex-direction: row-reverse;
+    right: 20px;
+    top: -15px;
+}
+
+.precio-descuento {
+    display: flex;
+    justify-content: space-around;
+}
+
+.precio-descuento h2 {
+    flex-grow: 0.30;
+}
+
+.precio-descuento h3 {
+    flex-grow: 0.70;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+nav ul {
+    padding: 0px;
+    width: 300px;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* CSS para FOOTER */
+
+footer {
+    background-color: white;
+    margin-top: 15px;
+}
+
+footer section div {
+    width: 60%;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+    line-height: 23px;
+}
+
+footer section div i {
+    color: #1259c3;
+    font-size: 30px
+}
+
+footer section div h2 {
+    font-size: 18px;
+    font-style: bold;
+}
+
+footer section div h3 {
+    font-size: 13px;
+}
+
+.copyright p {
+    padding-top: 8%;
+    font-size: 10px;
+    margin-left: 7px
+}
+
+
+
+
+/* BRAKE POINTS */
+
+@media (max-width: 360px) {
+
+    .detalle-articulo h4 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    nav {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    article {
+        width: 42%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        width: 60%;
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header-total {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-total section {
+        flex-grow: 0.8
+}
+
+}
+
+@media (min-width: 1000px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    article {
+        width: 22%;
+    }
+
+    /* .header-total {
+        display: flex;
+    }
+
+
+    .logo-MELI {}
+
+    .busqueda {
+        width: 700px;
+    }
+
+    .buscador {
+        width: 700px;
+    } */
+
+
+
+
+}
