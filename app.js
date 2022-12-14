@@ -4,9 +4,10 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 3000;
 
 app.use(express.static('public')); // para que se vean las imagenes
+
+let port = process.env.PORT || 3000;
 
 app.listen(port, console.log("Servidor escuchando en el puerto" , port)); // instalo servidor
 
