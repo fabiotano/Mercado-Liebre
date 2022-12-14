@@ -7,7 +7,7 @@ const path = require('path');
 
 app.use(express.static('public')); // para que se vean las imagenes
 
-let port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000; // es un OR condition 
 
 app.listen(port, console.log("Servidor escuchando en el puerto" , port)); // instalo servidor
 
