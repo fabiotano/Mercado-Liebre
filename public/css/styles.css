@@ -25,6 +25,7 @@ header {
 header p {
     text-align: center;
     font-size: 0.8rem;
+    padding-top: 15px;
 }
 
 header li a {
@@ -35,7 +36,7 @@ header li a {
 .burger-menu {
     text-align: center;
     padding-bottom: 15px;
-    margin-top: 23px;
+    margin-top: 5px;
 }
 
 .fa-bars {
@@ -56,20 +57,22 @@ header li a {
 
 
 .logo-MELI {
-    width: 50%;
+    width: 35%;
     flex-grow: 1;
     padding-right: 7px;
+    max-width: 220px;
 }
 
 .busqueda {
-    width: 50%;
+    width: 25%;
     width: fit-content;
+    max-width: 220px;
 }
 
 .buscador {
-    padding-left: 19px;
-    width: 50%;
+    padding-left: 10px;
     flex-grow: 1;
+    max-width: 450px;
 }
 
 .buscador input {
@@ -92,6 +95,7 @@ header li a {
 header section {
     justify-content: space-around;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-bottom: 15px;
 
@@ -201,10 +205,16 @@ article:hover {
     transition: 1s;
 }
 
+article h4 {
+    display: block;
+    visibility: hidden;
+    padding-top: 15px;
+}
+
 article:hover h4 {
     color: grey;
-    padding-top: 15px;
     display: block;
+    visibility: visible;
     transition: 1s;
 }
 
@@ -312,13 +322,13 @@ footer section div h3 {
 
     .header-total {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+       align-items: center;
     }
 
     .header-total section {
-        flex-grow: 0.8
-}
+        flex-grow: 1;
+    }
 
     header p {
 
@@ -365,3 +375,5 @@ footer section div h3 {
         font-size: 16px;
     }
 }
+
+transform: rotate
