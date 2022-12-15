@@ -199,9 +199,15 @@ article:hover {
     transition: 1s;
 }
 
-article:hover h4 {
+article h4 {
     color: grey;
     padding-top: 15px;
+    display: block;
+    visibility: hidden;
+}
+
+article:hover h4 {
+    visibility: visible;
     display: block;
     transition: 1s;
 }
