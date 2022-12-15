@@ -24,11 +24,12 @@ header {
 
 header p {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 header li a {
     text-decoration: none;
+    color: black;
 }
 
 .burger-menu {
@@ -188,7 +189,7 @@ article h4 {
 
 nav ul {
     padding: 0px;
-    width: 300px;
+    width: 40%;
     font-size: 0.8rem;
 }
 
@@ -335,5 +336,10 @@ footer section div h3 {
     .display-horizontal-footer {
         display: flex;
     }
+
+    nav ul {
+    font-size: 1rem;
+    }
+    
 
 }
